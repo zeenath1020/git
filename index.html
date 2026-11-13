@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Mukta:wght@200;300;400;500;600;700;800&family=Redaction+35:ital,wght@0,400;0,700;1,400&family=Redaction+70:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+  font-family: "Momo Signature", cursive;
+
+        }
+
+
+        .navbar {
+            margin-top: 7px;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .navbar ul li {
+            list-style: none;
+            padding: 4px;
+        }
+
+        .navbar ul li:hover {
+            background-color: antiquewhite;
+            border: 1px solid black;
+            border-radius: 20%;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+        }
+
+        #insta {
+            width: 30px;
+            height: 30px;
+        }
+
+        .rightside img {
+            margin-left: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(172, 165, 165, 0.563);
+            padding: 15px;
+        }
+
+        main::before {
+            content: '';
+            background: url('bgimg.avif') no-repeat center center/cover;
+            position: absolute;
+            top: 82px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            opacity: 0.5;
+        }
+
+        main {
+            height: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            color: rgb(179, 13, 13);
+            font-weight: bolder;
+        }
+
+        main h1 {
+            font-size: 100px;
+        }
+
+        article p {
+            margin: 40px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+
+        }
+
+        .cardimg img {
+            width: 300px;
+            height: 250px;
+        }
+
+        .cardimg {
+            position: relative;
+        }
+
+        .cardimg h2 {
+            padding: 10px;
+            border: 1px solid wheat;
+            background-color: white;
+            color: blue;
+            width: 100px;
+            text-align: center;
+            position: absolute;
+            top: 110px;
+            left: 100px;
+        }
+
+        .cardimg h2:hover {
+            background-color: rgb(45, 45, 210);
+            color: white;
+        }
+
+        .featured {
+            margin-top: 30px;
+            display: flex;
+            background-color: rgba(172, 165, 165, 0.563);
+            height: 150px;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .art {
+            margin: 30px auto;
+            width: 80%;
+
+        }
+
+        #treesimg {
+            width: 100%;
+            height: 100%;
+        }
+
+        #profileimg {
+            width: 20px;
+            height: 30px;
+            margin-top: 10px;
+
+        }
+
+        .profile {
+            display: flex;
+            gap: 10px
+        }
+
+        .belsection {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .belsection img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .wix {
+            margin-top: 2px;
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .wix img {
+            width: 300px;
+            height: 300px;
+
+        }
+        .wixcard:hover img{
+            opacity: 0.5;
+        }
+        .wixcard:hover p{
+            display: flex;
+
+        }
+        .wix p{
+            display: none;
+            /* visibility: hidden; */
+            width: 100%;
+            margin-left: 70px;
+            margin-top: 120px;
+            height: 300px;
+            /* background-color: gray; */
+            position: absolute;
+            top:0px;
+            left:0px;
+        }
+
+
+
+        .wixcard{
+            position: relative;
+        }
+    </style>
+    <title>Travel Website</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="searchleft">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
+                <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z">
+                </path>
+            </svg>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Travel</a></li>
+                <li><a href="">Eat</a></li>
+                <li><a href="">Relax</a></li>
+                <li><a href="">Videos</a></li>
+            </ul>
+        </div>
+        <div class="rightside">
+            <img src="fb.png" alt="facebook" />
+            <img id="insta" src="insta.png" alt="instagram">
+            <img src="pinterest.png" alt="pinterest">
+            <img src="twitter.png" alt="twitter">
+        </div>
+    </section>
+    <main>
+        <h2>Travel Blog</h2>
+        <h1>Going Places</h1>
+        <p>I haven't been everywhere, but it's on my list</p>
+    </main>
+    <article>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+            <br>
+            Just click “Edit Text” or double click me to add your own content and make changes to the font.
+
+        </p>
+
+    </article>
+    <section class="cards">
+        <section class="cardimg">
+            <img src="img1.avif" alt="img1" />
+            <h2>Travel</h2>
+        </section>
+        <section class="cardimg">
+            <img src="img1.avif" alt="img1" />
+            <h2>Eat</h2>
+        </section>
+        <section class="cardimg">
+            <img src="img1.avif" alt="img1" />
+            <h2>Relax</h2>
+        </section>
+    </section>
+    <section class="featured">
+        <h2>As features in</h2>
+        <h1>travel Blog</h1>
+        <h1>PLANETOUR</h1>
+        <h1>WORLD TRAVEL</h1>
+        <h1>skycloud</h1>
+    </section>
+    <article class="art">
+        <img id="treesimg" src="trees.avif" alt="treesimg">
+        <div class="profile">
+            <img id="profileimg" src="profileimg.png" alt="">
+            <h2>Admin
+                <br>
+                Mar 25,2023. 1 min read
+            </h2>
+        </div>
+        <h1>The Girl from Ipanema</h1>
+        <p>Create a blog post subtitle that summarizes the post Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Repellat, aliquid.</p>
+        <hr />
+
+        <section class="belsection">
+            <div class="leftdiv">
+                <img src="eyeimg.png" alt="eyeimg">
+                <span>1,536</span>
+                <img src="messageimg.png" alt="messageimg">
+                <span>0</span>
+
+            </div>
+
+            <div class="rightdiv">
+                <span>4</span>
+                <img src="likeimg.png" alt="">
+            </div>
+        </section>
+    </article>
+
+    <section class="wix">
+        <div class="wixcard">
+            <img src="img1.avif" alt="">
+            <p>#wix#website#freewebsite, <br>#websitetemplate#wix.com</p>
+        </div>
+        <div class="wixcard">
+            <img src="img2.avif" alt="">
+            <p>#wix#website#freewebsite, <br>
+                #websitetemplate#wix.com</p>
+
+        </div>
+        <div class="wixcard">
+            <img src="img3.avif" alt="">
+            <p>#wix#website#freewebsite, <br>#websitetemplate#wix.com</p>
+
+        </div>
+        <div class="wixcard">
+            <img src="img1.avif" alt="">
+            <p>#wix#website#freewebsite,   <br>#websitetemplate#wix.com</p>
+
+        </div>
+    </section>
+</body>
+
+</html>
